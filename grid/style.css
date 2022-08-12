@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.container1 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px; /*グリッドアイテムの横幅。順番に1列目、2列目、3列目で長さを指定。pxだと画面幅が短いとき見切れる*/
+  gap: 10px;/*グリッドアイテムの余白*/
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*グリッドアイテムの横幅。frだと画面幅に合わせて幅も縮小*/
+  gap: 10px;/*グリッドアイテムの余白*/
+  grid-template-rows: 200px 100px;/*グリッドアイテムの縦の長さ。1行目、2行目の順に長さを指定。*/
+}
+.item1 {
+  background: #0bd;
+  color: #fff;
+  padding: 10px;
+}
+.item2 {
+  background: #fe9d9d;
+  color: #fff;
+  padding: 10px;
+}
