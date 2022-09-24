@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/*　共通部分　---- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "游ゴシック Medium", "YuGothic", "游ゴシック体", "sans-serif";
+  color: rgb(28, 28, 28)
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+/*  サーチボックス---*/
+.search_container{
+  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #3879D9;
+  padding: 3px 10px;
+  border-radius: 3px;
+  height: 2.3em;
+  width: 265px;
+  overflow: hidden;
+}
+.search_container input[type="text"]{
+  border: none;
+  height: 2.0em;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+.search_container input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  border: none;
+  background: #3879D9;
+  color: #fff;
+  position: absolute;
+  width: 3.5em;
+  height: 3.0em;
+  right:0px;
+  top: -5px;
+  outline : none;
+}
+/*  ↑サーチボックスここまで---*/
+/*  ↓ヘッダーここから---*/
+.header-1 {
+ background-color: #a08b76;
+ color: rgb(245, 245, 245);
+ text-align: center;
+ font-size: 12px;
+ width: 100%;
+ padding: 6px;
+ box-sizing: border-box;
+}
+
+
+/*  ↓メディアクエリ---*/
+@media screen and (min-width: 769px){
+.header-1_sp {
+    display: none!important;
+}
+}
+@media screen and (max-width: 769px){
+  .header-1_pc {
+    display: none;
+  }
+  }
