@@ -190,15 +190,16 @@ form div {
   }
   .section-works {
     margin: 0 auto;
+    padding: 0;
   }
   .image-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     
   }
   .image-list2 {
-    width: 25%;
+    width: 30%;
     margin: 10px;
 }
 .image-list2 img {
@@ -207,7 +208,9 @@ form div {
     height: auto;
 }
 .section-news {
-  max-width: 100%;
+  width:100%;
+  max-width: 665px;
+  padding: 0;
 }
 .news-text dl {
  display: flex;
