@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+/*　共通部分　---- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "平成明朝 Std","游ゴシック Medium", "sans-serif";
+  color: #333;
+  box-sizing: border-box;
+  background-color: #e5e2d7;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  max-width: 100%;
+}
+.inner {
+  margin: 0 auto 200px auto;
+  padding: 0 3%;
+  width: 100%;
+ max-width: 700px;
+}
+
+
+/*　header　---- */
+.main-bg {
+  background-image: url("../img/mainvisual-sp.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position:relative;
+}
+.header-list {
+  position: absolute;
+ display: flex;
+ right: 0;
+ padding: 20px 50px 0 0;
+}
+.main-nav {
+  display: flex;
+}
+.main-nav li {
+  padding-left: 30px;
+}
+.main-nav li, h1, .online {
+  writing-mode: vertical-rl;
+}
+.header h1 {
+ font-size: 33px;
+ padding-left: 35px;
+}
+.online {
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 20px 20px;
+  padding: 10px 20px;
+  background-color: #333;
+}
+.online a {
+  color: #fff;
+  padding: 15px;
+  border: 1px solid #fff;
+}
+/*　お知らせ　---- */
+.section-news {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row-reverse;
+margin-top: 100px;
+}
+h2, h3, .news-list {
+  writing-mode: vertical-rl;
+}
+h2 {
+  padding-top: 5px;
+}
+.news-list {
+  padding: 25px 25px 0 0;
+}
+.news-list dd{
+ border-left: #333 1px solid;
+}
+.news-list dt:nth-of-type( 1 ){
+  border-right: #333 1px solid;
+ }
+ dd {
+  padding-left: 10px;
+ }
+/*　インフォ　---- */
+.info-souzou {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.info1, .info2 {
+  position: relative;
+  margin-top: 50px;
+}
+.info1 img, .info2 img {
+  width: 600px;
+}
+.info1 p {
+  position: absolute;
+  width: 60%;
+  background-color: #f4de22;
+  opacity: 0.5;
+  padding: 30px 20px;
+  left: -20px;
+  bottom: -10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+.info-kagaku {
+  display: flex;
+  margin-top: 100px;
+}
+.info2 p {
+  position: absolute;
+  width: 60%;
+  background-color: #ba3322;
+  opacity: 0.5;
+  padding: 30px 20px;
+  right: -20px;
+  bottom: -10px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/*　フッター　---- */
+.footer {
+  display: flex;
+  background-color: #333;
+  padding: 20px 10px 30px 10px;
+  justify-content: center;
+}
+h4 {
+  color: #fff;
+  font-size: 40px;
+  padding-left: 20px;
+}
+.footer-list {
+  writing-mode: vertical-rl;
+  color: #fff;
+  padding: 0 1%;
+}
+
+.footer-info p {
+  padding-left: 10px;
+}
+.footer-list a{
+  color: #fff;
+}
+.footer-nav {
+  margin-left: 40px;
+}
+.copy {
+  text-align: center;
+  color: #fff;
+}
+@media screen and (min-width: 750px){
+  .main-bg {
+    background-image: url("../img/mainvisual-pc.jpg");
+  }
+}
