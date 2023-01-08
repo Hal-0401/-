@@ -1,0 +1,297 @@
+@charset "utf-8";
+
+/*　共通部分　---- */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "游ゴシック Medium", "YuGothic", "游ゴシック体", "sans-serif";
+  color: #333;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+ padding: 45px 0 0 15px;
+}
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 40px;
+  line-height: 1.8rem;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 1000;
+  text-align: center;
+}
+.inner {
+  margin: 0 auto 200px auto;
+  padding: 0 3%;
+  width: 100%;
+ max-width: 700px;
+}
+
+
+/*　header　---- */
+.header {
+  margin-bottom: 25px;
+}
+/*　ヘッダーメニュー　---- */
+.main-nav {
+  background-color: #333;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+  padding: 25px 25px;
+}
+.main-nav li {
+  padding-left: 25px;
+}
+.main-nav li:nth-child( 5 ) {
+  padding: 0 15px;
+}
+.main-nav li a {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*　メイン　---- */
+.main-list li {
+  margin-top: 60px;
+}
+.list-text {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 2.0rem;
+  letter-spacing: -0.2rem;
+}
+.read {
+  margin-top: 20px;
+  font-size: 20px;
+ text-align: center;
+}
+.read a {
+  border-bottom: #000 1px solid;
+}
+
+/*　ピックアップ　---- */
+.pickup li {
+ margin-bottom: 90px;
+}
+.pickup li span {
+  padding-left: 15px;
+}
+.pickup img {
+  padding: 20px 0;
+}
+.pickup-text {
+  font-size: 18px;
+  padding: 0 10%;
+  line-height: 1.5rem;
+  letter-spacing: -0.05rem;
+}
+/*　ネーム　---- */
+.name-img {
+  text-align: center;
+}
+.name-img img {
+  border-radius: 50%;
+  max-width: 250px;
+}
+.name-title {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 50px 0; 
+}
+.name-text {
+  line-height: 1.3rem;
+  margin-bottom: 100px;
+}
+/*　ランキング　---- */
+.ranking-list {
+  margin-bottom: 100px;
+}
+.ranking-list li{
+  margin-top: 50px;
+}
+.ranking-text {
+  line-height: 1.2rem;
+}
+/*　アーカイブ　---- */
+.archive-list {
+  margin-top: 25px;
+}
+.archive-list li{
+ padding: 20px 0 20px 10px;
+ border-bottom: #000 1px solid;
+}
+.archive-list li:nth-child( 1 ) {
+  border-top: #000 1px solid;
+}
+/*　アバウト・メニュー・ツイッター　---- */
+.section-aboutmenu {
+  background-color: #f7f7f7;
+  margin: 0 auto;
+  padding: 0 3% 30px 3%;
+  width: 100%;
+ max-width: 700px;
+}
+.aboutmenu-h3 {
+  padding: 80px 0 30px 0;
+  text-align: left;
+}
+.twitter-title {
+  padding: 50px 0 30px 0;
+  text-align: left;
+}
+.about-text {
+  line-height: 1.2rem;
+}
+.about-list {
+  padding-top: 30px;
+}
+.about-list li {
+  padding: 5px 0;
+}
+.about-list li a {
+  position: relative;
+  padding-left: 10px;
+}
+.about-list li a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 0 6px 8px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+.menu-list li{
+padding: 20px 0 20px 15px;
+border-bottom: #000 1px solid;
+}
+.menu-list li:nth-child( 1 ) {
+  border-top: #000 1px solid;
+}
+.twitter-tweet {
+  margin: 0 auto;
+}
+/*　フッター　---- */
+.footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 750px){
+  .inner {
+    margin-bottom: 80px;
+  }
+  .main-nav {
+    justify-content: left;
+  }
+  h1 {
+    padding-left: 60px;
+   }
+   h2 {
+    margin-bottom: 20px;
+   }
+   .main-nav li:nth-child( 5 ) {
+    padding-left: 35px;
+  }
+  .section-main {
+    max-width: 1000px;
+  }
+  .section-main ul{
+    display: flex;
+  }
+  .section-main ul li {
+    margin-left: 20px;
+  }
+  .list-text {
+    margin-top: 10px;
+  }
+  .read {
+    margin-top: 5px;
+  }
+  /*　ブログメイン　---- */
+  .blog-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  .blog-sub1 {
+    width: 62%;
+  }
+  .blog-sub2 {
+    width:30%;
+    margin-left: 25px;
+  }
+  /*　ピックアップ　---- */
+  .pickup-text {
+    padding: 0 3% 15px 3%;
+  }
+  /*　ネーム　---- */
+  .name-img img {
+    max-width: 150px;
+  }
+  .name-title {
+    padding: 20px 0;
+  }
+  /*　ランキング　---- */
+  .ranking-list {
+    margin-bottom: 50px;
+  }
+  .ranking-list li {
+    margin-top: 20px;
+  }
+  /*　アバウトメニュー　---- */
+  .section-aboutmenu{
+    max-width: 1000px;
+  }
+  .aboutmenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .about, .menu, .twitter {
+    width: 30%;
+    margin-left: 25px;
+  }
+  .aboutmenu-h3, .twitter-title {
+    padding: 40px 0 30px 0;
+  }
+  .twitter-tweet {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px){
+  .main-nav li {
+    padding-left: 15px;
+  }
+  .main-nav li:nth-child( 5 ) {
+    padding: 0 0 0 12px;
+  }
+  .main-nav li a {
+    font-size: 15px;
+  }
+}
