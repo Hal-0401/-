@@ -93,6 +93,10 @@ h2 {
  dd {
   padding-left: 10px;
  }
+ .news-list dt:nth-of-type( n + 4 ), .news-list dt:nth-of-type( n + 5 ),
+  .news-list dd:nth-of-type( n + 4 ), .news-list dd:nth-of-type( n + 5 ){
+  display: none;
+ }
 /*　インフォ　---- */
 .info-souzou {
   display: flex;
@@ -169,4 +173,7 @@ h4 {
   .main-bg {
     background-image: url("../img/mainvisual-pc.jpg");
   }
+  .news-list dt:nth-of-type( 4 ), .news-list dt:nth-of-type( 5 ), .news-list dd:nth-of-type( 4 ), .news-list dd:nth-of-type( 5 ){
+    display: block;
+   }
 }
