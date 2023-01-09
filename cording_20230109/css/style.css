@@ -131,44 +131,52 @@ h2 {
   background-color: #ba3322;
   opacity: 0.5;
   padding: 30px 20px;
-  right: -20px;
+  right: -15px;
   bottom: -10px;
   text-align: center;
   color: #fff;
   font-weight: 600;
 }
-
 /*　フッター　---- */
 .footer {
-  display: flex;
   background-color: #333;
-  padding: 20px 10px 30px 10px;
-  justify-content: center;
-}
-h4 {
   color: #fff;
-  font-size: 40px;
-  padding-left: 20px;
 }
 .footer-list {
-  writing-mode: vertical-rl;
-  color: #fff;
-  padding: 0 1%;
-}
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 15px;
+  }
+  h4 {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+  .footer-nav {
+    margin-right: 15px;
+  }
+  .footer-nav li {
+    padding-right: 5px;
+  }
+  .footer-list p, .footer-list a, h4, .footer-nav li {
+    writing-mode: vertical-rl;
+    display: flex;
+    color: #fff;
+  }
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .copy {
+    text-align: center;
+  }
 
-.footer-info p {
-  padding-left: 10px;
-}
-.footer-list a{
-  color: #fff;
-}
-.footer-nav {
-  margin-left: 40px;
-}
-.copy {
-  text-align: center;
-  color: #fff;
-}
+
 @media screen and (min-width: 750px){
   .main-bg {
     background-image: url("../img/mainvisual-pc.jpg");
@@ -176,4 +184,19 @@ h4 {
   .news-list dt:nth-of-type( 4 ), .news-list dt:nth-of-type( 5 ), .news-list dd:nth-of-type( 4 ), .news-list dd:nth-of-type( 5 ){
     display: block;
    }
+   .info2 p {
+    right: -20px;
+  }
+   .footer-list {
+    padding: 30px;
+    }
+    h4 {
+      padding-left: 35px;
+    }
+    .footer-nav {
+      margin-right: 40px;
+    }
+    .footer-nav li {
+      padding-right: 15px;
+    }
 }
