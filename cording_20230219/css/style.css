@@ -57,7 +57,7 @@ h2 {
 
 
 /*　header　---- */
-.header {
+.aside {
   width: 100%;
   display: flex;
   position: fixed;
@@ -362,13 +362,13 @@ footer p {
 }
 /*　レスポンシブ　---- */
 @media screen and (min-width: 750px){
-  header {
+  .aside {
     height: 100vh;
     max-width: 280px; 
     flex-direction: column;
     overflow-y: auto;
   }
-  .header {
+  .aside {
     padding: 50px 10px 0 10px;
   }
 #gnav-content {
@@ -445,11 +445,11 @@ dt:first-of-type {
   margin-left: 0;
 }
 footer {
-  padding:50px 1% 5px 1%;
+  width: calc(100% - 280px);
+  margin-left: 280px;
+  padding:50px 0 5px 0;
 }
-.footer-list ul {
-  margin-left: 150px;
-}
+
 }
 @media screen and (max-width: 1050px){
   dd {

@@ -173,55 +173,15 @@ margin-bottom: 100px;
   padding-top:100px;
   margin-bottom: 100px;
 }
-.loopslide {
-  position: relative;
-  display: flex;
-  width: 100vw;
-  overflow: hidden;
-}
-.loopslide ul {
-  padding: 0;
-  width: 100vw;
-  display: flex;
-  flex-shrink: 0;
-}
-.loopslide ul:first-child {
-  animation: slide1 60s -30s linear infinite;
-}
-.loopslide ul:last-child {
-  animation: slide2 60s linear infinite;
-}
-.loopslide ul li {
-display: inline-block;
-width: 100%;
-min-width: 450px;
-padding-left: 20px;
-list-style: none;
-}
-.loopslide ul li img {
-display: block;
-width: 100%;
-height: auto;
+.slide-list img {
+  width:50%;/*スライダー内の画像を横幅100%に*/
+  height:auto;
 }
 
-@keyframes slide1 {
-  0% {
-      transform: translateX(100%);
-  }
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
 
-  to {
-      transform: translateX(-100%);
-  }
-}
-
-@keyframes slide2 {
-  0% {
-      transform: translateX(0%);
-  }
-
-  to {
-      transform: translateX(-200%);
-  }
+.slide-list .slick-slide {
+  margin:0 10px;/*スライド左右の余白調整*/
 }
 
 /*　フューチャー　---- */
