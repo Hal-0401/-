@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+/*　共通部分　---- */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  font-family: "游ゴシック Medium", "YuGothic", "游ゴシック体", "sans-serif";
+  color: #333;
+  background-color: #fafafa;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  max-width: 100%;
+}
+.inner {
+  margin: 0 auto 240px auto;
+  width: 100%;
+ max-width: 750px;
+ padding: 0 3%;
+}
+.inner02 {
+  margin: 0 auto;
+  width: 100%;
+ max-width: 750px;
+ padding: 0 3%;
+}
+h2 {
+  font-weight: 600;
+  padding-bottom: 50px;
+}
+h3 {
+  font-weight: 600;
+}
+
+
+/*　ヘッダー　---- */
+header {
+ height: 100vh;
+ background-image: url(../images/4774525_l.jpg);
+ background-size: cover;
+ background-position: center top;
+ background-repeat: no-repeat;
+}
+h1 {
+  text-align: right;
+}
+.logo {
+  width: 120px;
+  margin: 20px 20px 0 0;
+}
+
+/*　アバウト　---- */
+.section-about {
+  margin-top: 160px;
+}
+.archive, .new {
+  position: relative;
+  margin-top: 80px;
+}
+.about-item {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 15%;
+  padding: 3% 7%;
+  color: aliceblue;
+  background: rgba(3,3,3,.5);
+}
+/*　ファッション　---- */
+.section-fashion {
+  height: 480px;
+  background-image: url(../images/fashion.jpg);
+  background-size: cover;
+ background-position: center top;
+ background-repeat: no-repeat;
+ margin-bottom: 70px;
+}
+.fashion-h2 {
+  padding-top: 70px;
+}
+.fashion-text {
+  margin-bottom: 65px;
+}
+.read {
+  padding: 20px 70px;
+  border: 1px solid #222;
+}
+/*　カタログ　---- */
+.secton-catalog {
+background-color: #f5f5f5;
+}
+.catalog-item01 {
+padding-top: 60px;
+}
+.catalog-h2 {
+  margin-top: 130px;
+}
+.catalog-text {
+  text-align: left;
+}
+.catalog-read {
+  margin: 50px auto;
+  padding: 50px 0;
+}
+.catalog-img02 {
+  padding-bottom: 50px;
+}
+/*　マグ８８　---- */
+.mag88 {
+  background-color: #333;
+  padding-bottom: 120px;
+}
+.mag88 ul {
+  color: #fafafa;
+  text-align: left;
+}
+h4, .mag88-text {
+  color: #fafafa;
+  text-align: left;
+}
+h4 {
+  font-size: 2.4rem;
+  margin: 30px 0;
+}
+.mag88-logo {
+  padding: 30px 0;
+}
+/*　フッター　---- */
+footer {
+  margin: 30px 0;
+  font-weight: 600;
+}
+@media screen and (min-width: 750px){
+  .about-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  .inner02 {
+    max-width: 100%;
+  }
+  .new {
+    margin-left: 10px;
+  }
+  .catalog-h2 {
+    margin-top: 10px;
+    padding-bottom: 0px;
+  }
+  .catalog-item01, .catalog-item02 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .catalog-item02 {
+    margin-top: 60px;
+  }
+  .catalog-item {
+    width: 50%;
+    margin-left: 20px;
+  }
+  .catalog-text {
+    line-height: 1.8rem;
+    padding-top: 20px;
+  }
+  .catalog-read {
+    margin: 20px auto;
+    padding: 30px 0;
+  }
+  .mag88-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .mag88-list, .mag88-list_text {
+    width: 30%;
+    margin-top: 30px;
+  }
+  .mag88 {
+    padding-bottom: 60px;
+  }
+}
