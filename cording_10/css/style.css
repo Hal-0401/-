@@ -138,10 +138,6 @@ h4 {
 .mag88-logo {
   padding: 30px 0;
 }
-.mag88-list li::before {
-  content: "-";
-  width: 3px;
-}
 /*　フッター　---- */
 footer {
   margin: 30px 0;
