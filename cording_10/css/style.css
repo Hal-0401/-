@@ -30,164 +30,115 @@ img {
  max-width: 750px;
  padding: 0 3%;
 }
-.inner02 {
-  margin: 0 auto;
-  width: 100%;
- max-width: 750px;
- padding: 0 3%;
-}
-h2 {
-  font-weight: 600;
-  padding-bottom: 50px;
-}
-h3 {
-  font-weight: 600;
-}
-
 
 /*　ヘッダー　---- */
-header {
- height: 100vh;
- background-image: url(../images/4774525_l.jpg);
- background-size: cover;
- background-position: center top;
- background-repeat: no-repeat;
+.header {
+  position: relative;
 }
 h1 {
-  text-align: right;
+  position: absolute;
+  display: flex;
+  top: 35px;
+  left: 20px;
+  z-index: 2;
 }
-.logo {
-  width: 120px;
-  margin: 20px 20px 0 0;
+.main-bg img{
+  z-index: 1;/*#container,#footerよりも下に配置するために数値を小さくする*/
+    top: 0;/*topの位置がJSで変化*/
+  /*以下画面で背景画像を表示させるための指定*/
+  height:100vh;
+  object-fit:cover;
+  transform-origin:center;/*変化する基点を中心からに設定*/
+}
+/*　メニュー　---- */
+#gnav-content{
+  position: fixed;
+  top:-100%;
+  z-index: 2;
+  width:100%;
+  transition: 1s;
+}
+.gnav-list {
+  background: #333;
+  height: 40vh;
+  text-align: center;
+  padding-top: 40px;
+}
+.gnav-list li {
+  display: block;
+}
+.gnav-list li a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.gnav-hidden {
+  display: none;
+}
+.gnav-btn{
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+    right: 30px;
+    width: 60px;
+    height:50px;
+    z-index: 3;
+}
+/*ボタン内側*/
+.gnav-btn span{
+  position: absolute;
+    display: inline-block;
+    transition: all .4s;/*アニメーションの設定*/
+    height: 1px;
+  background: #fff;
+    width: 40px;
+  }
+
+.gnav-btn span:nth-of-type(1) {
+  top:15px; 
+  right: 15px;
 }
 
-/*　アバウト　---- */
-.section-about {
-  margin-top: 160px;
+.gnav-btn span:nth-of-type(2) {
+  top:30px;
+  right: 15px;
 }
-.archive, .new {
-  position: relative;
-  margin-top: 80px;
+
+.gnav-btn span:nth-of-type(3) {
+  top:45px;
+  right: 15px;
 }
-.about-item {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  margin: 0 15%;
-  padding: 3% 7%;
-  color: aliceblue;
-  background: rgba(3,3,3,.5);
+
+/*activeクラスが付与されると線が回転して×に*/
+
+.gnav-btn.active span:nth-of-type(1) {
+    top: 20px;
+    right: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 40px;
 }
-/*　ファッション　---- */
-.section-fashion {
-  height: 480px;
-  background-image: url(../images/fashion.jpg);
-  background-size: cover;
- background-position: center top;
- background-repeat: no-repeat;
- margin-bottom: 70px;
+
+.gnav-btn.active span:nth-of-type(2) {
+  opacity: 0;/*真ん中の線は透過*/
 }
-.fashion-h2 {
-  padding-top: 70px;
+
+.gnav-btn.active span:nth-of-type(3){
+    top: 33px;
+    right: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 40px;
 }
-.fashion-text {
-  margin-bottom: 65px;
+
+#gnav-content.is-active {
+  top: 0%;
 }
-.read {
-  padding: 20px 70px;
-  border: 1px solid #222;
+.section-info {
+  margin-top: 180px;
 }
-/*　カタログ　---- */
-.secton-catalog {
-background-color: #f5f5f5;
-}
-.catalog-item01 {
-padding-top: 60px;
-}
-.catalog-h2 {
-  margin-top: 130px;
-}
-.catalog-text {
-  text-align: left;
-}
-.catalog-read {
-  margin: 50px auto;
-  padding: 50px 0;
-}
-.catalog-img02 {
-  padding-bottom: 50px;
-}
-/*　マグ８８　---- */
-.mag88 {
-  background-color: #333;
-  padding-bottom: 120px;
-}
-.mag88 ul {
-  color: #fafafa;
-  text-align: left;
-}
-h4, .mag88-text {
-  color: #fafafa;
-  text-align: left;
-}
-h4 {
-  font-size: 2.4rem;
-  margin: 30px 0;
-}
-.mag88-logo {
-  padding: 30px 0;
-}
-/*　フッター　---- */
-footer {
-  margin: 30px 0;
-  font-weight: 600;
-}
+
+
 @media screen and (min-width: 750px){
-  .about-container {
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-  }
-  .inner02 {
-    max-width: 100%;
-  }
-  .new {
-    margin-left: 10px;
-  }
-  .catalog-h2 {
-    margin-top: 10px;
-    padding-bottom: 0px;
-  }
-  .catalog-item01, .catalog-item02 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .catalog-item02 {
-    margin-top: 60px;
-  }
-  .catalog-item {
-    width: 50%;
-    margin-left: 20px;
-  }
-  .catalog-text {
-    line-height: 1.8rem;
-    padding-top: 20px;
-  }
-  .catalog-read {
-    margin: 20px auto;
-    padding: 30px 0;
-  }
-  .mag88-container {
-    display: flex;
-    justify-content: space-around;
-  }
-  .mag88-list, .mag88-list_text {
-    width: 30%;
-    margin-top: 30px;
-  }
-  .mag88 {
-    padding-bottom: 60px;
-  }
+  
 }
