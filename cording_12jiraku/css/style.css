@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/*　共通部分　---- */
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+}
+body {
+  font-family: "FOT-筑紫A丸ゴシック Std", "游ゴシック Medium", "YuGothic", "游ゴシック体", "sans-serif";
+  color: #333;
+  background-color: #f0f0f0;
+  font-size: 1.6em;
+  line-height: 2.4rem;
+  text-align: left;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+img {
+  max-width: 100%;
+}
+.inner {
+  margin: 60px auto 150px auto;
+  width: 100%;
+ padding: 0 3%;
+}
+/*-- ハンバーガーメニュー --*/
+.header-button {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+  color: #000;
+}
+.header-button span {
+  display: block;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  width: 24px;
+  height: 3px;
+  background-color: #292929;
+  transition: .3s ease;
+}
+.header-button span::before,
+.header-button span::after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transition: all .3s;
+  background-color: inherit;
+}
+.header-button span::before {
+  top: -9px;
+}
+.header-button span::after {
+  top: 9px;
+}
+body.open .header-button {
+  z-index: 30;
+}
+body.open .header-button span {
+  width: 30px;
+  background-color: transparent;
+}
+body.open .header-button span::before,
+body.open .header-button span::after {
+  top: 0;
+  background-color: #292929;
+}
+body.open .header-button span::before {
+  transform: rotate(45deg);
+}
+body.open .header-button span::after {
+  transform: rotate(-45deg);
+}
+/* header-nav */
+#header-nav {
+  list-style: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(229, 229, 229, .9);
+  font-size: 1.8rem;
+  font-weight: 900;
+  transform: translateY(200%);
+  transition: .3s ease;
+}
+#header-nav-item:nth-child(n+2) {
+  margin-top: 0;
+  margin-left: 2em;
+}
+body.open #header-nav {
+transform: translateX(0);
+}
+#header-nav a {
+text-decoration: none;
+}
+/*-- メニュー１ --*/
+.menu1 {
+background-color: #dd6d74;
+border-radius: 0 0 15px 15px;
+}
+.menu-list1 {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(auto, 300px));
+  gap: 10px;
+  padding: 20px 5%;
+}
+.menu-list1 li{
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 5px;
+}
+.menu-list1>li>a>img {
+  max-width: 40px;
+}
+@media screen and (min-width: 750px){
+  
+  }

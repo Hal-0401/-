@@ -1,57 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>Plofile
-</title>
-<meta name="description" content="">
-<meta name = "viewport" content = "width = device-width, initial-scale=1, user-scalable=yes">
-<!-- CSS -->
-<link rel="stylesheet" href="./css/ress.css">
-<link rel="stylesheet" href="./css/style.css">
-<link rel="icon" type="image/ico" href="./images/favicon.ico">
+    <meta charset="utf-8">
+    <title>My Work -Portfolio</title>
+    <meta name="description" content="自分のポートフォリオサイト">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/ress.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
 </head>
 <body>
-    <header class="page-header wrapper">
-        <h1><a id="home" href="#home"><img class="logo" src="./images/logo.svg" alt="ロゴ"></a></h1>
-        <nav class="main-nav">
-            <ul>
+    <header class="header">
+        <h1>My Work</h1>
+        <nav>
+            <ul class="header-menu">
                 <li><a href="#about">About</a></li>
-                <li><a href="#bicycle">Bicycle</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href=""><img src="./images/icon-instagram.png" alt="インスタグラムアイコン"></a></li>
             </ul>
         </nav>
-        </header>
-        <section class="main-bg">
-
-        </section>
-</body>
-<main>
-    <div class="big-bg">
-        <img src="./images/mainvisual.jpg" alt="自転車の写真">
+    </header>
+    <main>
+        <img class="pc" src="./images/mainvisual-pc.jpg" alt="">
+        <img class="sp" src="./images/mainvisual-sp.jpg" alt="">
+    </main>
+    <section class="about inner">
+    <h2>About</h2>
+    <div class="about-sentence">
+    <p class="about-text1">Xxxxx Ashley</p>
+    <p class="about-text2">2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo 106-0031 Japan</p>
+    <p>tel: 000-0000-0000</p>
+    <p>url: www.xxxxxx.jp</p>
+    <p class="about-text3">mail: xxx@xxxxxx.jp</p>
+    <p class="about-text4">プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト<br>
+        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
     </div>
-    <section class="about wrapper">
-        <h2 id="about">About</h2>
-        <div class="about-plofile">
-        <img src="./images/about.jpg" alt="プロフィール写真">
-    <div class="text"><p class="name">KAKERU MIYAICHI</p>
-<p class="plofile">テキストテキストテキストテキストテキストテキス<br>
-テキストテキストテキストテキストテキストテキスト<br>
-テキストテキストテキストテキストテキストテキスト</p></div>
-</div>
-    </section>
-    <section class="bicycle wrapper">
-        <h2 id="bicycle">Bicycle</h2>
-        <ul class="bicycle-list">
-        <li><img src="./images/bicycle1.jpg" alt="自転車１">
-            <p class="bi-name">タイトルタイトル</p><p class="bi-text">テキストテキストテキスト</p></li>
-            <li><img src="./images/bicycle2.jpg" alt="自転車２">
-                <p class="bi-name">タイトルタイトル</p><p class="bi-text">テキストテキストテキスト</p></li>
-                <li><img src="./images/bicycle3.jpg" alt="自転車３">
-                    <p class="bi-name">タイトルタイトル</p><p class="bi-text">テキストテキストテキスト</p></li>
-</ul>
-    </section>
-    <footer class="footer">
-        <p>© 2020 Profile</p>
-    </footer>
-</main>
+</section>
+<section class="works inner">
+    <h2>Works</h2>
+    <ul class="works-images">
+        <li><img src="./images/works1.jpg" alt="ワーク写真１"></li>
+        <li><img src="./images/works2.jpg" alt="ワーク写真２"></li>
+        <li><img src="./images/works3.jpg" alt="ワーク写真３"></li>
+        <li><img src="./images/works4.jpg" alt="ワーク写真４"></li>
+        <li><img src="./images/works5.jpg" alt="ワーク写真５"></li>
+        <li><img src="./images/works6.jpg" alt="ワーク写真６"></li>
+    </ul>
+</section>
+<section class="news inner">
+    <h2>News</h2>
+    <dl>
+        <dt>2020.XX.XX</dt><dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+        <dt>2020.XX.XX</dt><dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+        <dt>2019.XX.XX</dt><dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+        <dt>2019.XX.XX</dt><dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+        <dt>2019.XX.XX</dt><dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+    </dl>
+</section>
+<section class="contact inner">
+    <h2>Contact</h2>
+    <form action="program.php" method="post">
+        <dl>
+            <div class="form-item">
+                <dt>NAME</dt>
+                <dd><input type="text" name="userName"></dd>
+            </div>
+            <div class="form-item">
+                <dt>E-mail</dt>
+                <dd><input type="email" name="userEmail"></dd>
+            </div>
+            <div class="form-item">
+                <dt>MESSAGE</dt>
+                <dd><textarea></textarea></dd>
+            </div>
+        </dl>
+        <div class="form-submit">
+            <input type="submit" value="送信">
+        </div>
+    </form>
+
+</section>
+<footer>
+    <small>© 2020 My Work</small>
+</footer>
+</body>
 </html>
